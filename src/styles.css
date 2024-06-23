@@ -96,3 +96,10 @@ footer {
 
   color: rgba(39, 33, 66, 0.4);
 }
+.weather-forecast {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
