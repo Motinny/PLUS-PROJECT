@@ -82,14 +82,18 @@ function displayForecast(response) {
         <div class="weather-forecast-temperature">    
                <strong>${Math.round(day.temperature.maximum)}°
                </strong>
-               </span>                    
+               </div>                    
            <div class="weather-forecast-temperature-">     
                   ${Math.round(day.temperature.minimum)}°</div>
-           </div>               
+           </div> 
+           </div>
 `;
     }
   });
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
 searchCity("Maseru");
